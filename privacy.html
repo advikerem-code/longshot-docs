@@ -17,15 +17,15 @@
     </div>
   </div>
   <div class="wrap">
-    <p class="meta">Last updated: November 1, 2026</p>
+    <p class="meta">Last updated: November 18, 2026</p>
     <h1>Privacy Policy</h1>
     <p>This policy explains what data the Long Shot game ("the game") collects and why, who we share it with, how long we keep it and how you can use your rights. For players in Türkiye, this policy is also the information notice under the Turkish Personal Data Protection Law No. 6698 (KVKK).</p>
 
     <h2>In short</h2>
     <ul>
       <li>When you first open the game, a player account is created for you automatically. We do not ask for your name, email address or phone number.</li>
-      <li>Your progress is saved on your phone and backed up to the cloud. If you use Game Center (iPhone) or Google Play Games (Android), your progress comes back on a new phone.</li>
-      <li>We measure in-game events and crashes to improve the game (for example, starting and finishing a mission, or each shot you fire).</li>
+      <li>Your progress is saved on your phone and backed up to the cloud. If you use Game Center on iPhone, your progress comes back on a new phone.</li>
+      <li>We measure in-game events and errors to improve the game (for example, starting and finishing a mission).</li>
       <li>The game contains ads (Google AdMob). Your advertising identifier is used for personalized ads only if you allow it. The game asks at the end of your first mission (see 2.6).</li>
       <li>Purchases are made through the App Store or Google Play. Your payment details never reach us.</li>
       <li>We do not sell your data. You can delete your account and your data from inside the game (see section 7).</li>
@@ -43,7 +43,7 @@
     <h3>2.1 Automatic player account (Firebase Authentication)</h3>
     <p>When you first open the game, an anonymous account is created for you in Google's Firebase Authentication service. Your account is identified by a random code (player ID). Firebase keeps the time the account was created and last signed in, and keeps the IP address used for sign-in for a few weeks for security. On iPhone, the account key is stored in the keychain, so if you delete and reinstall the game you will usually get the same account back. On Android, the key is stored in the game's data on your phone. Deleting the game deletes the key too, and if your phone's Google backup is on, it may come back when you reinstall.</p>
     <p>Purpose: to back up your progress to the cloud and to link measurement data to the same player.</p>
-    <p><strong>Game Center and Play Games.</strong> If you use Game Center on your iPhone, or are signed in to Google Play Games on Android, the game links your player account to it. This is so your progress, coins and rifles come back when you move to a new phone or reinstall the game. When linked, Firebase Authentication stores the player ID that Game Center or Play Games gives this game and your nickname there, together with your player account. We do not receive your email address, real name or friends list from Apple or Google. The game has no leaderboard, and your nickname is not shown to other players. If you do not want the link, keep Game Center or Play Games off. The game works the same with the automatic account, but your progress cannot move to a new phone. If on a new phone the link finds your earlier account, the game switches to it: the progress from both phones is merged, and the temporary account created on the new phone is deleted together with its cloud save.</p>
+    <p><strong>Game Center.</strong> If you use Game Center on your iPhone, the game links your player account to it. This is so your progress, coins and rifles come back when you move to a new phone or reinstall the game. When linked, Firebase Authentication stores the player ID that Game Center gives this game and your nickname there, together with your player account. We do not receive your email address, real name or friends list from Apple. The game has no leaderboard, and your nickname is not shown to other players. If you do not want the link, keep Game Center off. The game works the same with the automatic account, but your progress cannot move to a new phone. If on a new phone the link finds your earlier account, the game switches to it: the progress from both phones is merged, and the temporary account created on the new phone is deleted together with its cloud save. On Android, linking with Google Play Games is not available yet.</p>
 
     <h3>2.2 Cloud save (Cloud Firestore)</h3>
     <p>Your save is kept on a cloud page linked to your player ID:</p>
@@ -54,7 +54,7 @@
       <li>which one-time free offers you have used, and how many coin ads you have watched today,</li>
       <li>your settings and your answers in the permission windows, so a new phone does not ask again,</li>
       <li>lifetime totals such as shots, hits, coins earned and spent, ads watched and purchases, and when you first opened the game,</li>
-      <li>whether your account is linked to Game Center or Play Games, the game version, the device type (iOS or Android), when the save was last updated, and technical counters used to merge the save on your phone with the cloud save.</li>
+      <li>whether your account is linked to Game Center, the game version, the device type (iOS or Android), when the save was last updated, and technical counters used to merge the save on your phone with the cloud save.</li>
     </ul>
     <p>Single shots are not kept in the cloud save. Only your own account can read and write this page. The server is located in Germany (Frankfurt).</p>
     <p>Purpose: so that you do not lose your progress, to deliver your purchases correctly, and to see your progress when you write to us for help.</p>
@@ -62,25 +62,22 @@
     <h3>2.3 Game measurement (Google Analytics for Firebase)</h3>
     <p>We measure in-game events to improve the game, balance its difficulty and understand how it is played. Examples:</p>
     <ul>
-      <li>opening the game, watching the intro and moving between screens,</li>
+      <li>opening the game and playing the tutorial,</li>
       <li>starting, finishing, failing, quitting or retrying a mission, and the counts for that attempt (such as stars, time, shots, hits and accuracy),</li>
-      <li>each shot you fire in a mission: the kind of target, whether it hit, the distance, the wind, the scope zoom and how long you aimed,</li>
       <li>running out of ammo or time, and how you carried on,</li>
-      <li>earning and spending coins, and the rifles, scopes and other items you buy and choose,</li>
-      <li>changes to your settings,</li>
+      <li>earning coins,</li>
       <li>store and purchase events (product, price, currency),</li>
       <li>ad requests, ad impressions, rewards and the estimated revenue from ads,</li>
-      <li>your answers in the permission windows (see 2.6), and whether your account is linked to Game Center or Play Games,</li>
+      <li>your answers in the permission windows (see 2.6), and whether your account is linked to Game Center,</li>
       <li>error messages caught in the game.</li>
     </ul>
-    <p>We also send player properties: the highest mission you have reached, your total stars, your selected rifle and scope, whether aim assist is on, whether you have Remove Ads, whether unlimited ammo is active, whether you have made a purchase with real money and which test group you are in (see 2.5).</p>
     <p>In addition, Firebase automatically collects: an app instance ID, session and usage time, device model, operating system version, language, game version, approximate location derived from your IP address (country, region and city level) and App Store or Google Play purchase events. Firebase may also collect your advertising identifier: on iPhone (IDFA) only if you allowed tracking in Apple's prompt, and on Android.</p>
-    <p>The user ID in measurement is your player ID, so measurement data can be matched with your cloud save. Google signals is turned off, so this data is not linked to your Google account. We do not know your name or email address, so it is not linked to those either. In the European Economic Area, the United Kingdom and Switzerland, measurement follows your choice in Google's consent form (see 2.6).</p>
+    <p>Measurement data is linked to the random app instance ID, not to your player ID, so it is not matched with your cloud save. Google signals is turned off, so this data is not linked to your Google account. We do not know your name or email address, so it is not linked to those either. In the European Economic Area, the United Kingdom and Switzerland, measurement follows your choice in Google's consent form (see 2.6).</p>
     <p>Purpose: to improve the game and its balance, fix bugs, and measure how many people play and how often they come back.</p>
 
-    <h3>2.4 Crash reports (Firebase Crashlytics)</h3>
-    <p>If the game crashes, Crashlytics sends us a crash report. It contains where in the game's code the crash happened, the device model, operating system version, game version, the amount of memory and disk space, the time of the crash, a random installation ID and the last in-game events before the crash.</p>
-    <p>Purpose: to find and fix crashes.</p>
+    <h3>2.4 Error reports</h3>
+    <p>The game does not use a separate crash reporting service. If an error happens in the game, the error message is sent as a measurement event (see 2.3). If the game crashes and you have chosen to share analytics with app developers in your phone's settings, Apple or Google may also share a crash report with us. These reports do not identify you.</p>
+    <p>Purpose: to find and fix errors.</p>
 
     <h3>2.5 Remote settings and tests (Firebase Remote Config and A/B Testing)</h3>
     <p>When it opens, the game downloads some of its settings from Firebase Remote Config, for example rewards, prices and difficulty. This lets us adjust these numbers without releasing a new version. New values apply the next time you open the game, never in the middle of a mission.</p>
@@ -116,8 +113,8 @@
     <div class="tablewrap"><table>
       <thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead>
       <tbody>
-        <tr><td>Automatic account, Game Center and Play Games link, cloud save, delivering and restoring purchases</td><td>Providing the game service: performance of a contract (KVKK Art. 5(2)(c); GDPR Art. 6(1)(b))</td></tr>
-        <tr><td>Game measurement, crash reports, remote settings and tests, making sure the same purchase is not delivered twice and preventing abuse</td><td>Legitimate interest in improving the game and keeping it secure (KVKK Art. 5(2)(f); GDPR Art. 6(1)(f)). In the European Economic Area, the United Kingdom and Switzerland, your choice in Google's consent form applies to measurement.</td></tr>
+        <tr><td>Automatic account, Game Center link, cloud save, delivering and restoring purchases</td><td>Providing the game service: performance of a contract (KVKK Art. 5(2)(c); GDPR Art. 6(1)(b))</td></tr>
+        <tr><td>Game measurement, error reports, remote settings and tests, making sure the same purchase is not delivered twice and preventing abuse</td><td>Legitimate interest in improving the game and keeping it secure (KVKK Art. 5(2)(f); GDPR Art. 6(1)(f)). In the European Economic Area, the United Kingdom and Switzerland, your choice in Google's consent form applies to measurement.</td></tr>
         <tr><td>Showing non-personalized ads</td><td>Legitimate interest in offering the game for free (KVKK Art. 5(2)(f); GDPR Art. 6(1)(f)). In the European Economic Area, the United Kingdom and Switzerland, your choice in Google's consent form applies.</td></tr>
         <tr><td>Personalized ads and use of the advertising identifier</td><td>Your permission: on iPhone, Apple's tracking prompt; on Android, the game's ad permission window; in the European Economic Area, the United Kingdom and Switzerland, Google's consent form (on iPhone together with Apple's prompt) (KVKK Art. 5(1); GDPR Art. 6(1)(a))</td></tr>
         <tr><td>Answering your emails</td><td>Legitimate interest in answering you (KVKK Art. 5(2)(f); GDPR Art. 6(1)(f))</td></tr>
@@ -131,26 +128,25 @@
     <div class="tablewrap"><table>
       <thead><tr><th>With</th><th>For</th></tr></thead>
       <tbody>
-        <tr><td>Google (Firebase)</td><td>Automatic account, Game Center and Play Games link, cloud save, game measurement, crash reports, remote settings and tests</td></tr>
+        <tr><td>Google (Firebase)</td><td>Automatic account, Game Center link, cloud save, game measurement, error reports, remote settings and tests</td></tr>
         <tr><td>Google (AdMob)</td><td>Showing and measuring ads. Google may share data with its own advertising partners to show ads. In Europe, these partners are listed in the consent form.</td></tr>
         <tr><td>RevenueCat, Inc.</td><td>Verifying, delivering and restoring purchases</td></tr>
         <tr><td>Apple Inc.</td><td>App Store, payment, tracking prompt, SKAdNetwork, Game Center sign-in</td></tr>
-        <tr><td>Google (Google Play)</td><td>Distribution of the app, payment and Play Games sign-in on Android</td></tr>
+        <tr><td>Google (Google Play)</td><td>Distribution of the app and payment on Android</td></tr>
         <tr><td>Authorities</td><td>Only when required by law</td></tr>
       </tbody>
     </table></div>
     <p>We work with these service providers under terms (service agreements and data processing terms) that require them to protect your data at a level equal to the protection described in this policy.</p>
 
     <h2>5. International transfers</h2>
-    <p>Our service providers' servers are outside Türkiye. The cloud save is stored in Germany (Frankfurt). The automatic account runs on servers in the United States. Measurement, crash and ad data are processed on Google's servers in the United States and other countries. RevenueCat data is processed in the United States. These transfers are made under the agreements with these service providers and only for the purposes in this policy.</p>
+    <p>Our service providers' servers are outside Türkiye. The cloud save is stored in Germany (Frankfurt). The automatic account runs on servers in the United States. Measurement and ad data are processed on Google's servers in the United States and other countries. RevenueCat data is processed in the United States. These transfers are made under the agreements with these service providers and only for the purposes in this policy.</p>
 
     <h2>6. Retention</h2>
     <div class="tablewrap"><table>
       <thead><tr><th>Data</th><th>How long we keep it</th></tr></thead>
       <tbody>
-        <tr><td>Automatic account, Game Center and Play Games link, cloud save</td><td>As long as your account exists. When you delete your account in the game or ask us to delete it, it is deleted within 30 days at the latest. Google also clears deleted data from its own backups (within 180 days at most for the automatic account).</td></tr>
+        <tr><td>Automatic account, Game Center link, cloud save</td><td>As long as your account exists. When you delete your account in the game or ask us to delete it, it is deleted within 30 days at the latest. Google also clears deleted data from its own backups (within 180 days at most for the automatic account).</td></tr>
         <tr><td>Measurement data</td><td>At most 14 months at user and event level, then deleted automatically. Aggregated reports that do not identify anyone may be kept longer.</td></tr>
-        <tr><td>Crash reports</td><td>90 days, then deleted automatically</td></tr>
         <tr><td>Purchase records (RevenueCat)</td><td>As long as needed so that you can restore your purchases and for our legal obligations</td></tr>
         <tr><td>Ad data (Google AdMob)</td><td>According to Google's retention policy: <a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a></td></tr>
         <tr><td>Save on your phone</td><td>Until you delete the game or your account</td></tr>
@@ -160,7 +156,7 @@
 
     <h2>7. Deleting your data and withdrawing your permissions</h2>
     <ul>
-      <li><strong>In the game:</strong> open Settings, go to the Privacy tab, choose Delete account and data and confirm. This deletes your cloud save and your automatic account (together with its Game Center or Play Games link), resets the save on your phone and starts the deletion of your measurement data. It needs an internet connection and cannot be undone: your progress, stars, coins and rifles will be lost. Remove Ads and rifles you paid for are tied to your Apple account on iPhone and to your Google account on Android, and they come back with Restore purchases. Coins you bought do not come back. Your Game Center or Play Games account itself is not deleted; those accounts belong to Apple and Google.</li>
+      <li><strong>In the game:</strong> open Settings, go to the Account tab, choose Delete account and data and confirm. This deletes your cloud save and your automatic account (together with its Game Center link) and resets the save on your phone. Measurement data is not linked to your account; it is deleted automatically (see section 6). It needs an internet connection and cannot be undone: your progress, stars, coins and rifles will be lost. Remove Ads and rifles you paid for are tied to your Apple account on iPhone and to your Google account on Android, and they come back with Restore purchases. Coins you bought do not come back. Your Game Center account itself is not deleted; it belongs to Apple.</li>
       <li><strong>By email:</strong> write to <a href="mailto:advikerem@gmail.com">advikerem@gmail.com</a>. To confirm that the account is yours, we may ask you a few questions. We will complete your request within 30 days at the latest and let you know the result.</li>
       <li>Deleting the game does not delete everything (see 2.8).</li>
       <li>Purchase records may be kept at RevenueCat for our legal obligations and so that you can restore your purchases. Write to us if you want them deleted.</li>
